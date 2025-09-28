@@ -1,3 +1,5 @@
+-- exemplos usados na aula
+
 idade :: Int -- Um valor inteiro constante
 idade = 17
 testeIdade :: Bool -- Usa a definicao de
