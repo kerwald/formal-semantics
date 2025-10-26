@@ -27,5 +27,35 @@ membro2 a (x)
 
 -- exercicio 4
 
-unico :: [Int] -> [Int]
+removeNum :: Int -> [Int] -> [Int]
+removeNum a [] = []
+removeNum a (x:xs)
+    | a == x = removeNum a xs
+    | otherwise = x : removeNum a xs
 
+unico :: [Int] -> [Int]
+unico [] =  []
+unico (x:xs)
+    | membroNum x xs /= 0 = unico ( removeNum x xs )
+    | otherwise = x : unico xs
+
+-- exercicio 5
+
+maiores :: Int -> [Int] -> [Int]
+maiores a [] = []
+maiores a (x:xs)
+    | x > a = x : maiores a xs
+    | otherwise = maiores a xs
+
+menores :: Int -> [Int] -> [Int]
+menores a [] = []
+menores a (x:xs)
+    | x <= a = x : menores a xs
+    | otherwise = menores a xs
+
+
+quickSort :: [Int] -> [Int]
+quickSort [] = []
+quickSort (x:xs) = quickSort (menores x xs)
+                    ++ [x] ++
+                    quickSort (maiores x xs)
