@@ -1,6 +1,6 @@
 --para rodar o codigo
 --ghci
---ghci> :l exercicios-haskell-2.hs
+-- :l exercicios-haskell-2.hs
 
 somaLista :: [Int]->Int
 somaLista [] = 0

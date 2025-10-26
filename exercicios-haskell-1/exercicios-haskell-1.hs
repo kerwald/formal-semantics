@@ -1,6 +1,6 @@
 --para rodar o codigo
 --ghci
---ghci> :l exercicios-haskell-1.hs
+-- :l exercicios-haskell-1.hs
 
 idade :: Int -- Um valor inteiro constante
 idade = 17

@@ -1,6 +1,6 @@
 --para rodar o codigo
 --ghci
---ghci> :l extra-exercicios-haskell-1.hs
+-- :l extra-exercicios-haskell-1.hs
 
 -- exercicio 1
 
